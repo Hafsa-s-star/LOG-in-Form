@@ -1,5 +1,5 @@
 * {
-    text-align: left;
+    /* text-align: left; */
     margin: 0;
     overflow: hidden;
     box-sizing: border-box;
@@ -14,13 +14,18 @@ body {
 
 form {
     margin-left: 70px;
-    margin-top: 15rem;
+    margin-top: 10rem;
+    text-align: center;
 
 }
 fieldset {
-    width: 600px;
+    width: 500px;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 10px !important;
+     overflow: hidden;
+    border: 2px solid;
+    border-image-source: linear-gradient(to left, #cc2b5e , #753a88);
+      border-image-slice: 1;
 }
 
 legend {
@@ -34,5 +39,75 @@ legend {
 
 button {
     margin-top: 15px;
-    margin-left: 15rem;
+    margin-left: 10rem;}
+    
+         button {background-image: linear-gradient(to right, #AA076B 0%, #61045F  51%, #AA076B  100%)}
+
+         button {
+            padding: 10px 30px;
+            text-align: center;
+            text-transform: capitalize;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px lavender;
+            border-radius: 10px;
+            display: block;
+          }
+
+          button:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+            transform: scale(1.2);
+            transition: all 2s ease;
+          }
+         
+input {
+    border-radius: 4px;
+    height: 25px;
+}
+input:focus {
+    outline: none;
+      border: 1px solid;
+     border-image-slice: 1;
+   border-width: 5px;
+   border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+
+p {
+    color:#333 ;
+}
+
+span {
+     background: -webkit-linear-gradient(#cc2b5e , #753a88
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+}
+input#firstName {
+background-image:url(./notifications_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png) ;
+background-repeat: no-repeat;
+}
+
+input#password {
+background-image:url(./visibility_off_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png) ;
+background-repeat: no-repeat;
+}
+
+input#email {
+background-image: url(./mail_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png);
+background-repeat: no-repeat;
+}
+
+input#ContactNumber {
+    background-image:url(./add_call_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png) ;
+    background-repeat: no-repeat;
+}
+
+label {
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.747);
 }
